@@ -45,12 +45,12 @@ function Hero() {
         </div>
 
         <h1 className="hero__headline">
-          Tu empresa genera datos{' '}
-          <span className="hero__headline--green">todos los días.</span>
+          Tu empresa,{' '}
+          <span className="hero__headline--green">inteligente y en acción.</span>
         </h1>
 
         <p className="hero__sub">
-          ¿Te ayudan a decidir, o solo a saber<br />lo que ya ocurrió?
+          Dashboards que alertan, agentes que ejecutan<br />y procesos que se automatizaron para siempre.
         </p>
 
         <div className="hero__actions">
@@ -60,9 +60,10 @@ function Hero() {
 
         <div className="hero__stats">
           {[
-            { num: 'CORTEX120', label: 'Motor de análisis IA' },
-            { num: 'Tiempo Real', label: 'Visión de tu empresa' },
-            { num: '250+', label: 'Herramientas de dirección' },
+            { num: 'CORTEX120', label: 'Tu cerebro empresarial único' },
+            { num: 'A Medida', label: 'Todo diseñado para tu empresa' },
+            { num: '−80%', label: 'Menos trabajo repetitivo' },
+            { num: '24/7', label: 'Operando sin parar' },
           ].map((s, i) => (
             <div key={i} className="hero__stat">
               <span className="hero__stat-num">{s.num}</span>
@@ -477,24 +478,24 @@ function Problem() {
         <div className="problem__left">
           <span className="section-tag">El Problema</span>
           <h2 className="problem__headline">
-            No es falta de datos.<br />
-            <em>Es falta de inteligencia operativa.</em>
+            Tu empresa tiene<br />datos, personas<br />y procesos.<em><br />Pero no están<br />trabajando juntos.</em>
           </h2>
         </div>
         <div className="problem__right">
           <p className="problem__body">
-            Todas las empresas generan datos: ventas, inventarios, márgenes, clientes, operaciones.
-            Sin embargo, la mayoría de esos datos no ayudan a decidir, <strong>solo a reportar lo que ya pasó.</strong>
+            La información está dispersa entre sistemas, hojas de cálculo y correos. Tu equipo pasa horas
+            en tareas repetitivas que no generan valor. Las decisiones importantes se toman tarde,
+            con datos incompletos, <strong>cuando ya es difícil cambiar el rumbo.</strong>
           </p>
           <p className="problem__body">
-            La información crítica termina dispersa entre sistemas y hojas de Excel. Muchas decisiones se toman
-            con información incompleta, los problemas se detectan demasiado tarde y las oportunidades pasan desapercibidas.
+            No se trata solo de ver mejor — se trata de actuar mejor y más rápido.
+            De tener una empresa que detecta lo que pasa, decide con inteligencia y ejecuta sola.
           </p>
           <div className="problem__pillars">
             {[
-              { icon: '⚠', text: 'Decisiones con información incompleta' },
-              { icon: '⏱', text: 'Problemas detectados demasiado tarde' },
-              { icon: '📉', text: 'Oportunidades que pasan desapercibidas' },
+              { icon: '⚠', text: 'Decisiones tomadas con información incompleta o tardía' },
+              { icon: '⏱', text: 'Horas del equipo perdidas en trabajo repetitivo y manual' },
+              { icon: '📉', text: 'Oportunidades que se pierden por falta de velocidad de ejecución' },
             ].map((p, i) => (
               <div key={i} className="pillar">
                 <span className="pillar__icon">{p.icon}</span>
@@ -514,22 +515,22 @@ function Cortex() {
     <section className="cortex" id="como-funciona">
       <div className="cortex__inner">
         <div className="cortex__text">
-          <span className="section-tag">La Solución</span>
+          <span className="section-tag">La Plataforma</span>
           <h2 className="cortex__headline">
-            Conoce<br />
+            Tu cerebro<br />
             <span className="green-text">CORTEX120</span>
           </h2>
           <p className="cortex__body">
-            Nuestro motor de inteligencia empresarial impulsado por los cerebros de IA más avanzados del mundo.
-            Integra todos los sistemas de tu empresa y construye dashboards personalizados que detectan desviaciones,
-            identifican oportunidades y generan alertas clave — ofreciéndote una visión clara en tiempo real.
+            El motor central de inteligencia que conecta todos tus sistemas, analiza tu operación en tiempo real
+            y alimenta a todos tus agentes y automatizaciones. No es un dashboard genérico —
+            es una instancia única construida para tu empresa, que aprende y crece con ella.
           </p>
           <div className="cortex__features">
             {[
-              'Integración con ERP, CRM, contabilidad, inventarios',
-              'Dashboards construidos a la medida de tu operación',
-              'Alertas inteligentes antes de que impacten tu negocio',
-              'Comunicación directa con tu IA personalizada',
+              'Conecta ERP, CRM, contabilidad, inventarios y más',
+              'Dashboards ejecutivos personalizados para tu operación',
+              'Alertas proactivas antes de que impacten tu negocio',
+              'Base de inteligencia que alimenta cada agente que construimos',
             ].map((f, i) => (
               <div key={i} className="cortex__feature">
                 <span className="cortex__check">✓</span>
@@ -565,8 +566,14 @@ function HowItWorks() {
     {
       num: '03',
       title: 'Obtienes claridad estratégica',
-      desc: 'Recibe KPIs, gráficas y alertas inteligentes que te permiten visualizar lo que realmente está ocurriendo en tu empresa — antes de que los problemas impacten tu operación o rentabilidad. Tú y todo tu equipo se pueden comunicar con esta IA personalizada.',
+      desc: 'Recibe KPIs, gráficas y alertas inteligentes que te permiten visualizar lo que realmente está ocurriendo en tu empresa — antes de que los problemas impacten tu operación. Tú y tu equipo se comunican directamente con esta IA personalizada.',
       sources: ['KPIs en vivo', 'Alertas', 'Reportes', 'Chat IA']
+    },
+    {
+      num: '04',
+      title: 'Agentes y automatizaciones actúan',
+      desc: 'Construimos los agentes y flujos de trabajo conectados a tu CORTEX120 para que tu empresa ejecute sola — califica leads, atiende clientes, genera reportes, procesa facturas y más. Tu equipo deja de operar en manual y se enfoca en lo que realmente importa.',
+      sources: ['Agentes IA', 'Automatizaciones', 'WhatsApp', 'Email', 'CRM']
     },
   ]
 
@@ -577,7 +584,7 @@ function HowItWorks() {
           <span className="section-tag">Cómo funciona</span>
           <h2 className="how__headline">
             De datos dispersos a<br />
-            <span className="green-text">decisiones claras</span>
+            <span className="green-text">empresa en modo automático</span>
           </h2>
         </div>
         <div className="how__steps">
@@ -593,6 +600,311 @@ function HowItWorks() {
                   ))}
                 </div>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ─── AGENTS SECTION ──────────────────────────────────────── */
+function Agents() {
+  const agents = [
+    {
+      icon: '🎯',
+      name: 'Agente SDR',
+      tag: 'Ventas',
+      tagline: 'El vendedor que nunca duerme',
+      features: ['Califica leads y detecta necesidades en conversación natural', 'Genera propuestas personalizadas en segundos', 'Agenda reuniones y sincroniza tu CRM automáticamente'],
+      impact: '10x más leads procesados sin aumentar headcount. Tu equipo solo habla con prospectos calificados — 0 tiempo perdido en leads fríos.',
+      accent: '#8b7bff',
+    },
+    {
+      icon: '💬',
+      name: 'Agente de Soporte',
+      tag: 'Servicio al Cliente',
+      tagline: 'Atención sin fricción, sin horarios',
+      features: ['Resuelve el 60–80% de casos sin intervención humana', 'Escala los casos complejos con todo el contexto listo', 'Opera en WhatsApp, web, email e Instagram'],
+      impact: '60–80% de tickets resueltos sin humano. Respuesta en segundos, no horas. Soporte activo los 365 días del año.',
+      accent: '#5fd1ff',
+    },
+    {
+      icon: '👥',
+      name: 'Agente de RRHH',
+      tag: 'Reclutamiento',
+      tagline: 'Del CV a la oferta en minutos',
+      features: ['Evalúa candidatos con scoring estructurado por competencias', 'Genera descripciones de puesto y preguntas de entrevista', 'Gestiona el pipeline completo con seguimiento automatizado'],
+      impact: 'Hasta 60% menos tiempo operativo en reclutamiento. Posiciones que tomaban semanas, cubiertas en días.',
+      accent: '#f3c44e',
+    },
+    {
+      icon: '📊',
+      name: 'Agente Financiero',
+      tag: 'Finanzas',
+      tagline: 'De los datos al insight en 30 segundos',
+      features: ['Genera P&L, flujo de caja y balance ejecutivo al instante', 'Detecta anomalías y envía alertas proactivas', 'Se conecta con tu ERP, Excel o Google Sheets'],
+      impact: 'Reportes que tomaban 3–5 días se generan en 30 segundos. Cero horas de cierre manual al mes.',
+      accent: '#71b248',
+    },
+    {
+      icon: '📣',
+      name: 'Agente de Marketing',
+      tag: 'Marketing',
+      tagline: 'Una agencia de marketing en un agente',
+      features: ['Diseña campañas completas con estrategia y copies listos', 'Genera contenido para todas las redes sociales', 'Crea secuencias de email y anuncios pagados'],
+      impact: 'El trabajo de una semana de agencia, listo en minutos. Sin costo adicional por campaña, con la voz de tu marca.',
+      accent: '#ff7b6b',
+    },
+    {
+      icon: '⚖️',
+      name: 'Agente Legal',
+      tag: 'Legal',
+      tagline: 'Tu abogado disponible las 24 horas',
+      features: ['Analiza contratos: identifica riesgos, plazos y cláusulas clave', 'Resume documentos legales extensos en segundos', 'Genera minutas de reunión desde tus notas'],
+      impact: 'Hasta 70% menos tiempo en revisión documental. Contratos de 100 páginas analizados en menos de 2 minutos.',
+      accent: '#5fd1ff',
+    },
+  ]
+
+  return (
+    <section className="agents" id="agentes">
+      <div className="agents__inner">
+        <div className="agents__header">
+          <span className="section-tag">Agentes de IA</span>
+          <h2 className="agents__headline">
+            Más allá de los dashboards.<br />
+            <span className="green-text">Agentes que actúan por ti.</span>
+          </h2>
+          <p className="agents__sub">
+            Construimos agentes de IA que ejecutan, deciden y operan — entrenados con la información de <em>tu</em> empresa,
+            integrados con tus sistemas, diseñados desde cero para tu operación específica.
+            No son plantillas: cada uno es único. Y todos se conectan entre sí.
+          </p>
+        </div>
+
+        <div className="agents__grid">
+          {agents.map((agent, i) => (
+            <div key={i} className="agent-card" style={{ '--agent-accent': agent.accent }}>
+              <div className="agent-card__top">
+                <span className="agent-card__icon">{agent.icon}</span>
+                <div>
+                  <h3 className="agent-card__name">{agent.name}</h3>
+                  <span className="agent-card__tag">{agent.tag}</span>
+                </div>
+              </div>
+              <p className="agent-card__tagline">"{agent.tagline}"</p>
+              <ul className="agent-card__features">
+                {agent.features.map((f, j) => (
+                  <li key={j}>
+                    <span className="agent-card__check">✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <div className="agent-card__impact">
+                <span className="agent-card__impact-label">IMPACTO REAL</span>
+                <p className="agent-card__impact-text">{agent.impact}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="agents__brain">
+          <div className="agents__brain-icon">🧠</div>
+          <div className="agents__brain-text">
+            <h4 className="agents__brain-headline">Todo conectado a tu cerebro único: CORTEX120</h4>
+            <p className="agents__brain-body">
+              CORTEX120 es nuestro motor central de inteligencia. Para cada empresa que trabaja con nosotros,
+              construimos una instancia completamente única — entrenada de forma continua con los datos de tu operación,
+              tus clientes y tus procesos. Cada agente que desarrollamos se conecta a ese cerebro.
+              El resultado es una inteligencia que solo tú tienes, que aprende de tu empresa cada día
+              y que ningún competidor puede replicar.
+            </p>
+          </div>
+        </div>
+
+        <div className="agents__custom">
+          <div className="agents__custom-content">
+            <div>
+              <span className="agents__custom-badge">AGENTES PERSONALIZADOS</span>
+              <h3 className="agents__custom-headline">¿No ves el agente que necesitas?</h3>
+              <p className="agents__custom-body">
+                Los ejemplos de arriba son solo ideas de lo que es posible. Diseñamos agentes para cualquier proceso,
+                área o industria — si puedes describir cómo funciona, nosotros lo construimos.{' '}
+                <strong>No hay proceso demasiado complejo. Todo se puede.</strong>
+              </p>
+            </div>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn btn--primary">
+              Diseñar mi agente →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ─── AUTOMATIONS SECTION ─────────────────────────────────── */
+function Automations() {
+  const categories = [
+    {
+      title: 'Ventas y CRM',
+      icon: '💼',
+      color: '#5FD1FF',
+      items: [
+        { name: 'Seguimiento automático de prospectos', impact: '+conversión' },
+        { name: 'Generador de propuestas comerciales', impact: 'segundos · cero errores' },
+        { name: 'Secuencias de email outbound con IA', impact: '+respuestas' },
+        { name: 'Reporte de pipeline semanal', impact: 'visibilidad total' },
+      ],
+    },
+    {
+      title: 'Servicio al Cliente',
+      icon: '🎧',
+      color: '#71B248',
+      items: [
+        { name: 'Clasificación y enrutamiento de tickets', impact: 'resolución más rápida' },
+        { name: 'Notificaciones proactivas de pedido', impact: '+NPS' },
+        { name: 'Encuestas post-servicio automáticas', impact: 'detecta riesgo antes' },
+        { name: 'Base de conocimiento que aprende sola', impact: 'respuesta siempre correcta' },
+      ],
+    },
+    {
+      title: 'Operaciones y Back-Office',
+      icon: '⚙️',
+      color: '#F59E0B',
+      items: [
+        { name: 'Procesamiento de facturas y órdenes', impact: 'cero captura manual' },
+        { name: 'Agendamiento de reuniones inteligente', impact: 'coordinación automática' },
+        { name: 'Alertas de inventario predictivas', impact: 'sin quiebres de stock' },
+        { name: 'Dashboard ejecutivo automatizado', impact: 'reporte listo cada semana' },
+      ],
+    },
+    {
+      title: 'RRHH y Talento',
+      icon: '👤',
+      color: '#A78BFA',
+      items: [
+        { name: 'Onboarding automatizado de nuevos empleados', impact: 'sin carga para RRHH' },
+        { name: 'Gestión de vacaciones y ausencias', impact: 'sin hojas de cálculo' },
+        { name: 'Seguimiento de desempeño continuo', impact: 'datos en tiempo real' },
+        { name: 'Publicación y filtro de vacantes con IA', impact: 'candidatos calificados rápido' },
+      ],
+    },
+  ]
+
+  return (
+    <section className="automations" id="automatizaciones">
+      <div className="automations__inner">
+        <div className="automations__header">
+          <span className="section-tag">Automatizaciones de Alto Impacto</span>
+          <h2 className="automations__headline">
+            Procesos que se ejecutan solos.<br />
+            <span className="green-text">Tu equipo enfocado en lo que importa.</span>
+          </h2>
+          <p className="automations__sub">
+            Sin código. Sin mantenimiento. Integrados con tus herramientas desde el primer día.
+          </p>
+        </div>
+
+        <div className="automations__grid">
+          {categories.map((cat, i) => (
+            <div key={i} className="auto-block" style={{ '--cat-color': cat.color }}>
+              <div className="auto-block__header">
+                <span className="auto-block__icon">{cat.icon}</span>
+                <span className="auto-block__title">{cat.title}</span>
+              </div>
+              <ul className="auto-block__list">
+                {cat.items.map((item, j) => (
+                  <li key={j} className="auto-row">
+                    <span className="auto-row__dot" />
+                    <span className="auto-row__name">{item.name}</span>
+                    <span className="auto-row__impact">{item.impact}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ─── INDUSTRY PACKAGES ───────────────────────────────────── */
+function IndustryPackages() {
+  const packages = [
+    {
+      icon: '🛍️',
+      name: 'Retail y E-commerce',
+      items: ['Agente de Soporte 24/7', 'Notificaciones de pedido automáticas', 'Recuperación de carrito abandonado', 'Encuestas CSAT post-compra'],
+      accent: '#ff7b6b',
+    },
+    {
+      icon: '🏢',
+      name: 'Servicios Profesionales',
+      sub: 'Consultoría, Legales, Contabilidad',
+      items: ['Agente SDR', 'Revisión y análisis de contratos IA', 'Generador de propuestas comerciales', 'Reporte financiero mensual automático'],
+      accent: '#8b7bff',
+    },
+    {
+      icon: '🏭',
+      name: 'Manufactura y Distribución',
+      items: ['Procesamiento automático de órdenes', 'Alertas de inventario predictivas', 'Soporte a distribuidores 24/7', 'Dashboard operativo semanal'],
+      accent: '#f3c44e',
+    },
+    {
+      icon: '💻',
+      name: 'SaaS y Tecnología',
+      items: ['Agente SDR', 'Soporte técnico IA', 'Onboarding automatizado de nuevos usuarios', 'Análisis de churn y alertas de retención'],
+      accent: '#5fd1ff',
+    },
+    {
+      icon: '🏥',
+      name: 'Salud y Clínicas',
+      items: ['Agendamiento de citas automatizado', 'Recordatorios a pacientes', 'Soporte post-consulta', 'Gestión de documentación clínica básica'],
+      accent: '#71b248',
+    },
+    {
+      icon: '🎓',
+      name: 'Educación y Capacitación',
+      items: ['Agente de admisiones', 'Soporte a estudiantes 24/7', 'Onboarding de nuevos alumnos', 'Seguimiento de progreso y alertas de deserción'],
+      accent: '#ff7b6b',
+    },
+  ]
+
+  return (
+    <section className="industries" id="industrias">
+      <div className="industries__inner">
+        <div className="industries__header">
+          <span className="section-tag">Paquetes por Industria</span>
+          <h2 className="industries__headline">
+            Combinaciones que ya funcionan<br />
+            <span className="green-text">en empresas como la tuya</span>
+          </h2>
+          <p className="industries__sub">
+            Agentes y automatizaciones preconfigurados para tu sector. Punto de partida probado, personalizable al 100%.
+          </p>
+        </div>
+        <div className="industries__grid">
+          {packages.map((pkg, i) => (
+            <div key={i} className="industry-card" style={{ '--pkg-accent': pkg.accent }}>
+              <div className="industry-card__header">
+                <span className="industry-card__icon">{pkg.icon}</span>
+                <div>
+                  <h3 className="industry-card__name">{pkg.name}</h3>
+                  {pkg.sub && <span className="industry-card__sub">{pkg.sub}</span>}
+                </div>
+              </div>
+              <ul className="industry-card__items">
+                {pkg.items.map((item, j) => (
+                  <li key={j}>
+                    <span className="industry-card__dot" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -639,7 +951,7 @@ function Platform() {
 
         <div className="platform__quote">
           <blockquote>
-            "En un entorno donde la velocidad de decisión define a los líderes, las empresas que convierten datos en inteligencia son las que toman ventaja."
+            "Las empresas que ganan no son las que tienen más datos — son las que tienen mejores decisiones, más velocidad de ejecución y menos trabajo manual."
           </blockquote>
           <div className="platform__quote-sig">
             <span className="platform__quote-line" />
@@ -657,13 +969,13 @@ function CTA() {
     <section className="cta" id="contacto">
       <div className="cta__bg" aria-hidden="true" />
       <div className="cta__inner">
-        <span className="section-tag section-tag--light">La claridad para dirigir mejor</span>
+        <span className="section-tag section-tag--light">Inteligencia · Agentes · Automatización</span>
         <h2 className="cta__headline">
-          Cuando la información es clara,<br />
-          <span className="green-text">las decisiones son mejores.</span>
+          Tu empresa inteligente,<br />
+          <span className="green-text">automatizada y en acción.</span>
         </h2>
         <p className="cta__sub">
-          El futuro deja de ser una sorpresa.
+          Construimos el ecosistema completo para que tu empresa opere a otro nivel.
         </p>
         <div className="cta__actions">
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--lg">Solicitar Demo</a>
@@ -706,6 +1018,9 @@ export default function App() {
       <Problem />
       <Cortex />
       <HowItWorks />
+      <Agents />
+      <Automations />
+      <IndustryPackages />
       <Platform />
       <CTA />
       <Footer />
