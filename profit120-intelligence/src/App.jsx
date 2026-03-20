@@ -26,7 +26,7 @@ function Nav() {
   return (
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <Logo size={120} />
-      <div className="nav__badge">INTELLIGENCE</div>
+      <div className="nav__badge">B2B</div>
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="nav__cta">Solicitar Demo</a>
     </nav>
   )
@@ -495,7 +495,7 @@ function Problem() {
             {[
               { icon: '⚠', text: 'Decisiones tomadas con información incompleta o tardía' },
               { icon: '⏱', text: 'Horas del equipo perdidas en trabajo repetitivo y manual' },
-              { icon: '📉', text: 'Oportunidades que se pierden por falta de velocidad de ejecución' },
+              { icon: '↓', text: 'Oportunidades que se pierden por falta de velocidad de ejecución' },
             ].map((p, i) => (
               <div key={i} className="pillar">
                 <span className="pillar__icon">{p.icon}</span>
@@ -612,7 +612,7 @@ function HowItWorks() {
 function Agents() {
   const agents = [
     {
-      icon: '🎯',
+      icon: '',
       name: 'Agente SDR',
       tag: 'Ventas',
       tagline: 'El vendedor que nunca duerme',
@@ -621,7 +621,7 @@ function Agents() {
       accent: '#8b7bff',
     },
     {
-      icon: '💬',
+      icon: '',
       name: 'Agente de Soporte',
       tag: 'Servicio al Cliente',
       tagline: 'Atención sin fricción, sin horarios',
@@ -630,7 +630,7 @@ function Agents() {
       accent: '#5fd1ff',
     },
     {
-      icon: '👥',
+      icon: '',
       name: 'Agente de RRHH',
       tag: 'Reclutamiento',
       tagline: 'Del CV a la oferta en minutos',
@@ -639,7 +639,7 @@ function Agents() {
       accent: '#f3c44e',
     },
     {
-      icon: '📊',
+      icon: '',
       name: 'Agente Financiero',
       tag: 'Finanzas',
       tagline: 'De los datos al insight en 30 segundos',
@@ -648,7 +648,7 @@ function Agents() {
       accent: '#71b248',
     },
     {
-      icon: '📣',
+      icon: '',
       name: 'Agente de Marketing',
       tag: 'Marketing',
       tagline: 'Una agencia de marketing en un agente',
@@ -657,7 +657,7 @@ function Agents() {
       accent: '#ff7b6b',
     },
     {
-      icon: '⚖️',
+      icon: '',
       name: 'Agente Legal',
       tag: 'Legal',
       tagline: 'Tu abogado disponible las 24 horas',
@@ -711,7 +711,7 @@ function Agents() {
         </div>
 
         <div className="agents__brain">
-          <div className="agents__brain-icon">🧠</div>
+          <div className="agents__brain-icon"></div>
           <div className="agents__brain-text">
             <h4 className="agents__brain-headline">Todo conectado a tu cerebro único: CORTEX120</h4>
             <p className="agents__brain-body">
@@ -750,7 +750,7 @@ function Automations() {
   const categories = [
     {
       title: 'Ventas y CRM',
-      icon: '💼',
+      icon: '',
       color: '#5FD1FF',
       items: [
         { name: 'Seguimiento automático de prospectos', impact: '+conversión' },
@@ -761,7 +761,7 @@ function Automations() {
     },
     {
       title: 'Servicio al Cliente',
-      icon: '🎧',
+      icon: '',
       color: '#71B248',
       items: [
         { name: 'Clasificación y enrutamiento de tickets', impact: 'resolución más rápida' },
@@ -772,7 +772,7 @@ function Automations() {
     },
     {
       title: 'Operaciones y Back-Office',
-      icon: '⚙️',
+      icon: '',
       color: '#F59E0B',
       items: [
         { name: 'Procesamiento de facturas y órdenes', impact: 'cero captura manual' },
@@ -783,7 +783,7 @@ function Automations() {
     },
     {
       title: 'RRHH y Talento',
-      icon: '👤',
+      icon: '',
       color: '#A78BFA',
       items: [
         { name: 'Onboarding automatizado de nuevos empleados', impact: 'sin carga para RRHH' },
@@ -836,38 +836,38 @@ function Automations() {
 function IndustryPackages() {
   const packages = [
     {
-      icon: '🛍️',
+      icon: '',
       name: 'Retail y E-commerce',
       items: ['Agente de Soporte 24/7', 'Notificaciones de pedido automáticas', 'Recuperación de carrito abandonado', 'Encuestas CSAT post-compra'],
       accent: '#ff7b6b',
     },
     {
-      icon: '🏢',
+      icon: '',
       name: 'Servicios Profesionales',
       sub: 'Consultoría, Legales, Contabilidad',
       items: ['Agente SDR', 'Revisión y análisis de contratos IA', 'Generador de propuestas comerciales', 'Reporte financiero mensual automático'],
       accent: '#8b7bff',
     },
     {
-      icon: '🏭',
+      icon: '',
       name: 'Manufactura y Distribución',
       items: ['Procesamiento automático de órdenes', 'Alertas de inventario predictivas', 'Soporte a distribuidores 24/7', 'Dashboard operativo semanal'],
       accent: '#f3c44e',
     },
     {
-      icon: '💻',
+      icon: '',
       name: 'SaaS y Tecnología',
       items: ['Agente SDR', 'Soporte técnico IA', 'Onboarding automatizado de nuevos usuarios', 'Análisis de churn y alertas de retención'],
       accent: '#5fd1ff',
     },
     {
-      icon: '🏥',
+      icon: '',
       name: 'Salud y Clínicas',
       items: ['Agendamiento de citas automatizado', 'Recordatorios a pacientes', 'Soporte post-consulta', 'Gestión de documentación clínica básica'],
       accent: '#71b248',
     },
     {
-      icon: '🎓',
+      icon: '',
       name: 'Educación y Capacitación',
       items: ['Agente de admisiones', 'Soporte a estudiantes 24/7', 'Onboarding de nuevos alumnos', 'Seguimiento de progreso y alertas de deserción'],
       accent: '#ff7b6b',
@@ -925,15 +925,15 @@ function Platform() {
             <span className="green-text">Una plataforma completa.</span>
           </h2>
           <p className="platform__body">
-            Además de Intelligence, puedes homologar toda tu información con nuestra plataforma de soluciones empresariales
+            Además de B2B, puedes homologar toda tu información con nuestra plataforma de soluciones empresariales
             <strong> profit120.com</strong>, donde encontrarás más de 250 herramientas de dirección empresarial
             automatizadas, entrenamientos, cursos y networking a nivel LATAM.
           </p>
           <div className="platform__items">
             {[
-              { icon: '🧠', title: '250+ Herramientas', sub: 'De dirección empresarial automatizadas' },
-              { icon: '🎓', title: 'Entrenamientos y Cursos', sub: 'Formación práctica y aplicable' },
-              { icon: '🌐', title: 'Networking LATAM', sub: 'Conecta con empresarios de toda la región' },
+              { icon: '', title: '250+ Herramientas', sub: 'De dirección empresarial automatizadas' },
+              { icon: '', title: 'Entrenamientos y Cursos', sub: 'Formación práctica y aplicable' },
+              { icon: '', title: 'Networking LATAM', sub: 'Conecta con empresarios de toda la región' },
             ].map((item, i) => (
               <div key={i} className="platform__item">
                 <span className="platform__item-icon">{item.icon}</span>
@@ -955,7 +955,7 @@ function Platform() {
           </blockquote>
           <div className="platform__quote-sig">
             <span className="platform__quote-line" />
-            <span>Profit120 Intelligence</span>
+            <span>Profit120 B2B</span>
           </div>
         </div>
       </div>
@@ -998,7 +998,7 @@ function Footer() {
       <div className="footer__inner">
         <div className="footer__brand">
           <Logo size={120} />
-          <span className="footer__sub">INTELLIGENCE</span>
+          <span className="footer__sub">B2B</span>
           <p className="footer__tagline">La primera plataforma de IA especializada en PYMEs</p>
         </div>
         <div className="footer__copy">
